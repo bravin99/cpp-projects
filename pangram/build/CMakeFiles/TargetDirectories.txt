@@ -1,0 +1,7 @@
+/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/pangram/build/CMakeFiles/pangram.dir
+/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/pangram/build/CMakeFiles/edit_cache.dir
+/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/pangram/build/CMakeFiles/rebuild_cache.dir
+/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/pangram/build/CMakeFiles/list_install_components.dir
+/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/pangram/build/CMakeFiles/install.dir
+/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/pangram/build/CMakeFiles/install/local.dir
+/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/pangram/build/CMakeFiles/install/strip.dir

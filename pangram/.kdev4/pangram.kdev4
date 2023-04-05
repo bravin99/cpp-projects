@@ -1,0 +1,31 @@
+[CMake]
+Build Directory Count=1
+Current Build Directory Index-Host System=0
+
+[CMake][CMake Build Directory 0]
+Build Directory Path=/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/pangram/build
+Build Type=Release
+CMake Binary=/usr/bin/cmake
+CMake Executable=/usr/bin/cmake
+Environment Profile=
+Extra Arguments=
+Install Directory=
+Runtime=Host System
+
+[Launch]
+Launch Configurations=Launch Configuration 0
+
+[Launch][Launch Configuration 0]
+Configured Launch Modes=execute
+Configured Launchers=nativeAppLauncher
+Name=pangram
+Type=Native Application
+
+[Launch][Launch Configuration 0][Data]
+Configured from ProjectItem=pangram,pangram
+Project Target=pangram,pangram
+Working Directory=file:///home/shumwe/Desktop/ProfessionalProjects/cpp-projects/pangram/build/
+isExecutable=false
+
+[Project]
+VersionControlSupport=
