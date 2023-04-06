@@ -18,6 +18,7 @@ int main(int argc, char **argv) {
     string n = "";
     cout<<"Customer name (Press enter for no name): ";
     getline(cin,n);
+    cout<<endl;
 
     cout<<two_fer(n)<<endl;
 
