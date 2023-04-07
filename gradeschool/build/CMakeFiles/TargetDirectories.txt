@@ -1,0 +1,7 @@
+/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/gradeschool/build/CMakeFiles/gradeschool.dir
+/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/gradeschool/build/CMakeFiles/edit_cache.dir
+/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/gradeschool/build/CMakeFiles/rebuild_cache.dir
+/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/gradeschool/build/CMakeFiles/list_install_components.dir
+/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/gradeschool/build/CMakeFiles/install.dir
+/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/gradeschool/build/CMakeFiles/install/local.dir
+/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/gradeschool/build/CMakeFiles/install/strip.dir

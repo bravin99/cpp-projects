@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/gradeschool/build",
+  "command": "/usr/bin/c++ -O3 -DNDEBUG -o CMakeFiles/gradeschool.dir/main.cpp.o -c /home/shumwe/Desktop/ProfessionalProjects/cpp-projects/gradeschool/main.cpp",
+  "file": "/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/gradeschool/main.cpp"
+}
+]
