@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/Hamming/build",
+  "command": "/usr/bin/c++ -O3 -DNDEBUG -o CMakeFiles/hamming.dir/main.cpp.o -c /home/shumwe/Desktop/ProfessionalProjects/cpp-projects/Hamming/main.cpp",
+  "file": "/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/Hamming/main.cpp"
+}
+]
