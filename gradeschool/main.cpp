@@ -1,40 +1,65 @@
-#include "grade_school.h"
 #include <iostream>
+#include <map>
+#include <vector>
 #include <algorithm>
-#include <stdexcept>
-
-using namespace std;
 
 namespace grade_school
 {
-    const vector<string> empty_roster;
-
-    void school::add(const string &name, int grade)
+    using std::map;
+    using std::string;
+    using std::vector;
+    class school
     {
-        auto &students = students_by_grade[grade];
-        const auto it = upper_bound(students.begin(), students.end(), name);
-        students.insert(it, name);
-    }
+        map<int, vector<string>> _roster;
+    public:
+        school() = default;
 
-    const vector<string> &school::grade(int grade) const
-    {
-        try{
-            const auto &students_in_grade = students_by_grade.at(grade);
-            return students_in_grade;
-        } catch (const out_of_range &e)
+        map<int, vector<string>> roster() const
+            { return _roster; }
+
+        vector<string> grade(int g) const
         {
-            return empty_roster;
+            auto f  = _roster.find(g);
+            if  (f == _roster.end())
+                return vector<string>();
+            return f->second;
         }
-    }
 
-    const map<int, vector<std::string>> & school::roster() const
-    {
-        return students_by_grade;
-    }
-
+        void add(std::string name, int grade)
+        {
+            _roster[grade].push_back(name);
+            std::sort(_roster[grade].begin(),  _roster[grade].end());
+        }
+    };
 }
+int main(int argc, char **argv)
+{
+    using namespace grade_school;
+    school blossom;
+    blossom.add("Liam", 1);
+    blossom.add("Hannah", 2);
+    blossom.add("Brian", 2);
+    blossom.add("Keith", 3);
+    blossom.add("Anne", 3);
+    blossom.add("Lucy", 3);
 
+    auto our_roster = blossom.roster();
+    for (auto const& [grade,  students] : our_roster)
+    {
+        std::cout<<"Grade "<<grade<<": "<<std::endl;
+        for (auto const& student : students)
+            std::cout<<" - "<<student<<std::endl;
+    }
 
-int main(int argc, char **argv) {
+    auto grade_2_students = blossom.grade(2);
+    std::cout<<"\nGrade 2 students: "<<std::endl;
+    for (auto const& student : grade_2_students)
+        std::cout<<" - "<<student<<std::endl;
+
+    auto grade_3_students = blossom.grade(3);
+    std::cout<<"\nGrade 3 students: "<<std::endl;
+    for (auto const& student : grade_3_students)
+        std::cout<<" - "<<student<<std::endl;
+
     return 0;
 }
