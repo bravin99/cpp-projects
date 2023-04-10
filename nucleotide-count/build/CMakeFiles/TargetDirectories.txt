@@ -1,0 +1,7 @@
+/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/nucleotide-count/build/CMakeFiles/nucleotide-count.dir
+/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/nucleotide-count/build/CMakeFiles/edit_cache.dir
+/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/nucleotide-count/build/CMakeFiles/rebuild_cache.dir
+/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/nucleotide-count/build/CMakeFiles/list_install_components.dir
+/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/nucleotide-count/build/CMakeFiles/install.dir
+/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/nucleotide-count/build/CMakeFiles/install/local.dir
+/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/nucleotide-count/build/CMakeFiles/install/strip.dir
