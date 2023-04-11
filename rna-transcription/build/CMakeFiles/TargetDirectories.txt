@@ -1,0 +1,7 @@
+/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/rna-transcription/build/CMakeFiles/rna-transcription.dir
+/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/rna-transcription/build/CMakeFiles/edit_cache.dir
+/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/rna-transcription/build/CMakeFiles/rebuild_cache.dir
+/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/rna-transcription/build/CMakeFiles/list_install_components.dir
+/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/rna-transcription/build/CMakeFiles/install.dir
+/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/rna-transcription/build/CMakeFiles/install/local.dir
+/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/rna-transcription/build/CMakeFiles/install/strip.dir

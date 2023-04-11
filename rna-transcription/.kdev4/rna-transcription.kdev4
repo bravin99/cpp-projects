@@ -1,0 +1,51 @@
+[CMake]
+Build Directory Count=1
+Current Build Directory Index-Host System=0
+
+[CMake][CMake Build Directory 0]
+Build Directory Path=/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/rna-transcription/build
+Build Type=Release
+CMake Binary=/usr/bin/cmake
+CMake Executable=/usr/bin/cmake
+Environment Profile=
+Extra Arguments=
+Install Directory=
+Runtime=Host System
+
+[Cppcheck]
+useSystemIncludes=true
+
+[CustomDefinesAndIncludes][ProjectPath0]
+Path=.
+parseAmbiguousAsCPP=true
+parserArguments=-ferror-limit=100 -fspell-checking -Wdocumentation -Wunused-parameter -Wunreachable-code -Wall -std=c++11
+parserArgumentsC=-ferror-limit=100 -fspell-checking -Wdocumentation -Wunused-parameter -Wunreachable-code -Wall -std=c99
+parserArgumentsCuda=-ferror-limit=100 -fspell-checking -Wdocumentation -Wunused-parameter -Wunreachable-code -Wall -std=c++11
+parserArgumentsOpenCL=-ferror-limit=100 -fspell-checking -Wdocumentation -Wunused-parameter -Wunreachable-code -Wall -cl-std=CL1.1
+
+[CustomDefinesAndIncludes][ProjectPath0][Compiler]
+Name=Clang
+
+[CustomDefinesAndIncludes][ProjectPath0][Includes]
+1=/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/rna-transcription/rna_transcription.h
+
+[Launch]
+Launch Configurations=Launch Configuration 0
+
+[Launch][Launch Configuration 0]
+Configured Launch Modes=execute
+Configured Launchers=nativeAppLauncher
+Name=rna-transcription
+Type=Native Application
+
+[Launch][Launch Configuration 0][Data]
+Configured from ProjectItem=rna-transcription,rna-transcription
+Project Target=rna-transcription,rna-transcription
+Working Directory=file:///home/shumwe/Desktop/ProfessionalProjects/cpp-projects/rna-transcription/build/
+isExecutable=false
+
+[Project]
+VersionControlSupport=
+
+[SourceFileTemplates]
+LastUsedTemplate=/home/shumwe/.local/share/kdevfiletemplates/template_descriptions/cpp_basic.desktop
