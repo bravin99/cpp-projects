@@ -1,3 +1,6 @@
+[Buildset]
+BuildItems=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x01\x00\x00\x00\x0b\x00\x00\x00\x00\x01\x00\x00\x00 \x00n\x00u\x00c\x00l\x00e\x00o\x00t\x00i\x00d\x00e\x00-\x00c\x00o\x00u\x00n\x00t)
+
 [CMake]
 Build Directory Count=1
 Current Build Directory Index-Host System=0
@@ -22,6 +25,7 @@ Name=nucleotide-count
 Type=Native Application
 
 [Launch][Launch Configuration 0][Data]
+Configured from ProjectItem=nucleotide-count,nucleotide-count
 Project Target=nucleotide-count,nucleotide-count
 Working Directory=file:///home/shumwe/Desktop/ProfessionalProjects/cpp-projects/nucleotide-count/build/
 isExecutable=false
