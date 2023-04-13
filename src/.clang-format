@@ -1,0 +1,6 @@
+BasedOnStyle: GNU
+ColumnLimit: 80
+ContinuationIndentWidth: 4
+IndentWidth: 4
+ReflowComments: true
+UseTab: Never
