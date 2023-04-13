@@ -1,0 +1,7 @@
+/home/shumwe/Desktop/ProfessionalProjects/DifferenceOfSquares/build/CMakeFiles/differenceofsquares.dir
+/home/shumwe/Desktop/ProfessionalProjects/DifferenceOfSquares/build/CMakeFiles/edit_cache.dir
+/home/shumwe/Desktop/ProfessionalProjects/DifferenceOfSquares/build/CMakeFiles/rebuild_cache.dir
+/home/shumwe/Desktop/ProfessionalProjects/DifferenceOfSquares/build/CMakeFiles/list_install_components.dir
+/home/shumwe/Desktop/ProfessionalProjects/DifferenceOfSquares/build/CMakeFiles/install.dir
+/home/shumwe/Desktop/ProfessionalProjects/DifferenceOfSquares/build/CMakeFiles/install/local.dir
+/home/shumwe/Desktop/ProfessionalProjects/DifferenceOfSquares/build/CMakeFiles/install/strip.dir
