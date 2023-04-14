@@ -1,0 +1,1 @@
+[{"directory":"/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/NthPrime/","command":"/usr/bin/g++ -Isrc/prime_check -Isrc src/prime_check/prime_check.cpp","file":"src/prime_check/prime_check.cpp"},{"directory":"/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/NthPrime/","command":"/usr/bin/g++ -Isrc/prime_check -Isrc src/main.cpp","file":"src/main.cpp"}]

@@ -1,0 +1,1173 @@
+commit 9feeaf86e97475a0e0e4de1a5573e1b5063dba83
+Author:     Bravin Shumwe <bravinshumwe.coding@gmail.com>
+AuthorDate: Fri, 14 Apr 2023 00:05:47 +0300
+Commit:     Bravin Shumwe <bravinshumwe.coding@gmail.com>
+CommitDate: Fri, 14 Apr 2023 00:05:47 +0300
+Refnames:   (HEAD -> main, origin/main, origin/HEAD)
+
+Exercism:  Nth Prime
+---
+ nthprime.gpr                                       |   9 +++
+ .../clangd/index/FILE.h.0B47AA35880D6C68.idx       | Bin 0 -> 270 bytes
+ .../clangd/index/__FILE.h.6F8BF1EA128A85A8.idx     | Bin 0 -> 218 bytes
+ .../clangd/index/__fpos64_t.h.76CFE28F9C6B8241.idx | Bin 0 -> 540 bytes
+ .../clangd/index/__fpos_t.h.9C6C7821CAFB6728.idx   | Bin 0 -> 528 bytes
+ .../clangd/index/__locale_t.h.3F73A78C1398A1A9.idx | Bin 0 -> 692 bytes
+ .../index/__mbstate_t.h.18CD360ACD7D77DA.idx       | Bin 0 -> 454 bytes
+ .../clangd/index/__sigset_t.h.6BFEE909145251C5.idx | Bin 0 -> 292 bytes
+ .../index/alloc_traits.h.DE99E4A907B8EC89.idx      | Bin 0 -> 9876 bytes
+ .../index/alloc_traits.h.FC35C6F0E247A996.idx      | Bin 0 -> 2174 bytes
+ .../clangd/index/alloca.h.B3C3404035C15EA6.idx     | Bin 0 -> 436 bytes
+ .../clangd/index/allocator.h.F269DAB237B74714.idx  | Bin 0 -> 4070 bytes
+ .../clangd/index/assertions.h.4D1CB26F36FC581B.idx | Bin 0 -> 294 bytes
+ .../atomic_wide_counter.h.56DB1510DB559888.idx     | Bin 0 -> 532 bytes
+ .../index/atomic_word.h.816B05CE7EB8F502.idx       | Bin 0 -> 268 bytes
+ .../clangd/index/atomicity.h.BD26CDADD949DF9E.idx  | Bin 0 -> 924 bytes
+ .../clangd/index/basic_ios.h.32EC5AE48F357591.idx  | Bin 0 -> 4156 bytes
+ .../index/basic_ios.tcc.8B07C7570F397FBB.idx       | Bin 0 -> 1428 bytes
+ .../index/basic_string.h.4FA5E761D595F3D8.idx      | Bin 0 -> 33004 bytes
+ .../index/basic_string.tcc.44C69969E0950E5D.idx    | Bin 0 -> 6566 bytes
+ .../clangd/index/binders.h.02AD1C14CFEBE3F9.idx    | Bin 0 -> 2084 bytes
+ .../clangd/index/byteswap.h.6F2302C3C3B7048C.idx   | Bin 0 -> 566 bytes
+ .../index/c++allocator.h.02DC8F879514F82D.idx      | Bin 0 -> 398 bytes
+ .../clangd/index/c++config.h.5B37CD559DD242E1.idx  | Bin 0 -> 6504 bytes
+ .../clangd/index/c++locale.h.23F7D49ACAC605D4.idx  | Bin 0 -> 856 bytes
+ .../clangd/index/cctype.F73B8BB2D9B03303.idx       | Bin 0 -> 1180 bytes
+ .../clangd/index/cdefs.h.8113CACA75BA375E.idx      | Bin 0 -> 2012 bytes
+ .../clangd/index/cerrno.D19D769407AD4F87.idx       | Bin 0 -> 214 bytes
+ .../index/char_traits.h.58E1BA7568F3AE10.idx       | Bin 0 -> 10098 bytes
+ .../clangd/index/charconv.h.26815F6D61E55410.idx   | Bin 0 -> 638 bytes
+ .../clangd/index/clocale.E6F83AA5311903CB.idx      | Bin 0 -> 430 bytes
+ .../clangd/index/clock_t.h.4298E782D79C8AAE.idx    | Bin 0 -> 248 bytes
+ .../clangd/index/clockid_t.h.BE41EEDE18978A00.idx  | Bin 0 -> 266 bytes
+ .../index/concept_check.h.67C690C5C532A4CA.idx     | Bin 0 -> 294 bytes
+ .../cookie_io_functions_t.h.F008C27662A34FC7.idx   | Bin 0 -> 1234 bytes
+ .../index/cpp_type_traits.h.F0542441C138C0AB.idx   | Bin 0 -> 9912 bytes
+ .../clangd/index/cpu-set.h.E2616A97511B788D.idx    | Bin 0 -> 998 bytes
+ .../index/cpu_defines.h.E76556EE97FC472D.idx       | Bin 0 -> 176 bytes
+ .../clangd/index/cstdint.CED58966CDFA7386.idx      | Bin 0 -> 2124 bytes
+ .../clangd/index/cstdio.9926451A3C65B667.idx       | Bin 0 -> 3858 bytes
+ .../clangd/index/cstdlib.E700053B2DC797BE.idx      | Bin 0 -> 4090 bytes
+ .../clangd/index/ctype.h.8C666B63C116FFB8.idx      | Bin 0 -> 4446 bytes
+ .../clangd/index/ctype_base.h.84A386BCB497613E.idx | Bin 0 -> 1288 bytes
+ .../index/ctype_inline.h.D42A35D51B9983D8.idx      | Bin 0 -> 544 bytes
+ .../clangd/index/cwchar.224502E3F0F8F816.idx       | Bin 0 -> 5632 bytes
+ .../clangd/index/cwctype.A27255B363348FE5.idx      | Bin 0 -> 1694 bytes
+ .../index/cxxabi_forced.h.F94AA128CED523F6.idx     | Bin 0 -> 448 bytes
+ .../cxxabi_init_exception.h.2411603366B7A116.idx   | Bin 0 -> 786 bytes
+ .../clangd/index/debug.h.6606D4EF0F0F2B1B.idx      | Bin 0 -> 694 bytes
+ .../clangd/index/endian.h.86AC4579400E1F3C.idx     | Bin 0 -> 494 bytes
+ .../clangd/index/endian.h.CBC7B63F4780E810.idx     | Bin 0 -> 256 bytes
+ .../clangd/index/endianness.h.63FFD0703BF37E41.idx | Bin 0 -> 158 bytes
+ .../clangd/index/errno-base.h.6103700F2A961E57.idx | Bin 0 -> 660 bytes
+ .../clangd/index/errno.h.061397FDE4C98757.idx      | Bin 0 -> 174 bytes
+ .../clangd/index/errno.h.3B388C5618606E4B.idx      | Bin 0 -> 610 bytes
+ .../clangd/index/errno.h.976E2F7993D5837D.idx      | Bin 0 -> 1650 bytes
+ .../clangd/index/errno.h.D9D8241F3E79ABDF.idx      | Bin 0 -> 146 bytes
+ .../clangd/index/errno.h.ED5CC3F31B3B565F.idx      | Bin 0 -> 142 bytes
+ .../index/error_constants.h.013EFABF389784A0.idx   | Bin 0 -> 5954 bytes
+ .../clangd/index/error_t.h.A969CA67F72DCE1C.idx    | Bin 0 -> 198 bytes
+ .../clangd/index/exception.5AC4E82D340561F7.idx    | Bin 0 -> 2112 bytes
+ .../clangd/index/exception.h.016D8173AE9B8AC6.idx  | Bin 0 -> 994 bytes
+ .../index/exception_defines.h.8C68C6254AF026FB.idx | Bin 0 -> 208 bytes
+ .../index/exception_ptr.h.6AF22A03AB69085B.idx     | Bin 0 -> 3014 bytes
+ .../index/features-time64.h.C0452545283792D6.idx   | Bin 0 -> 172 bytes
+ .../clangd/index/features.h.839A4F3F7C9A4375.idx   | Bin 0 -> 1192 bytes
+ .../index/floatn-common.h.220778C34B31099D.idx     | Bin 0 -> 1424 bytes
+ .../clangd/index/floatn.h.987689782B9EAADF.idx     | Bin 0 -> 294 bytes
+ .../index/functexcept.h.C93AC7EEC2C52E01.idx       | Bin 0 -> 1516 bytes
+ .../index/functional_hash.h.CA9CDD5F7806E291.idx   | Bin 0 -> 5880 bytes
+ .../index/gthr-default.h.C621C06A637A6F8F.idx      | Bin 0 -> 4068 bytes
+ .../clangd/index/gthr.h.D20340D9A16F961F.idx       | Bin 0 -> 194 bytes
+ .../clangd/index/hash_bytes.h.089D00327443A67F.idx | Bin 0 -> 718 bytes
+ .../index/initializer_list.7ED07824519A193E.idx    | Bin 0 -> 1322 bytes
+ .../clangd/index/invoke.h.E7897D8743CE7629.idx     | Bin 0 -> 1580 bytes
+ .../.cache/clangd/index/ios.46C5572D2070B331.idx   | Bin 0 -> 296 bytes
+ .../clangd/index/ios_base.h.45FDD048C8971AC9.idx   | Bin 0 -> 18422 bytes
+ .../clangd/index/iosfwd.3E4EFAF68C9ED157.idx       | Bin 0 -> 2920 bytes
+ .../clangd/index/iostream.08CF117662E69EDE.idx     | Bin 0 -> 1308 bytes
+ .../clangd/index/istream.41B33D6E3B3EF0BC.idx      | Bin 0 -> 8210 bytes
+ .../clangd/index/istream.tcc.32332A358838F0C9.idx  | Bin 0 -> 8868 bytes
+ .../index/libc-header-start.h.DE4EC70643B7CD1B.idx | Bin 0 -> 302 bytes
+ .../clangd/index/locale.h.5F1EA2E91D0CD92F.idx     | Bin 0 -> 3076 bytes
+ .../clangd/index/locale.h.AF6D7871B4798B5C.idx     | Bin 0 -> 334 bytes
+ .../index/locale_classes.h.AB11DDD1C0573C23.idx    | Bin 0 -> 9318 bytes
+ .../index/locale_classes.tcc.5D2D8AB5C54E63EB.idx  | Bin 0 -> 1824 bytes
+ .../index/locale_facets.h.5F8A2DCE8F2152AF.idx     | Bin 0 -> 24832 bytes
+ .../index/locale_facets.tcc.AD539B3450199EEB.idx   | Bin 0 -> 7206 bytes
+ .../clangd/index/locale_t.h.34B89A0475C69266.idx   | Bin 0 -> 232 bytes
+ .../clangd/index/localefwd.h.774D62117C0942D9.idx  | Bin 0 -> 3216 bytes
+ .../index/long-double.h.4E9A278B5D22A190.idx       | Bin 0 -> 144 bytes
+ .../clangd/index/main.cpp.C60D1A7A99B9E840.idx     | Bin 0 -> 492 bytes
+ .../clangd/index/mbstate_t.h.90C0B8AE7F2F3969.idx  | Bin 0 -> 234 bytes
+ .../clangd/index/memoryfwd.h.8AB54381D6C7E51E.idx  | Bin 0 -> 434 bytes
+ .../clangd/index/move.h.AC1E8A3DCAE48E69.idx       | Bin 0 -> 2248 bytes
+ .../index/nested_exception.h.39B4B8EB1E17D2D4.idx  | Bin 0 -> 2128 bytes
+ .../.cache/clangd/index/new.0A717E25D1098CD4.idx   | Bin 0 -> 2594 bytes
+ .../index/new_allocator.h.386B8B158780E214.idx     | Bin 0 -> 2410 bytes
+ .../index/numeric_traits.h.ADA4EBBBBD9EBB8F.idx    | Bin 0 -> 1952 bytes
+ .../clangd/index/os_defines.h.1A0BD3E7977A03AA.idx | Bin 0 -> 284 bytes
+ .../clangd/index/ostream.21BF8E05095109AC.idx      | Bin 0 -> 6262 bytes
+ .../clangd/index/ostream.tcc.F4641B0D58FDDFB9.idx  | Bin 0 -> 2764 bytes
+ .../index/ostream_insert.h.75078E365DABE5F4.idx    | Bin 0 -> 712 bytes
+ .../clangd/index/postypes.h.FECE8BA2D1A686B7.idx   | Bin 0 -> 2436 bytes
+ .../index/predefined_ops.h.9616FAA42FA62982.idx    | Bin 0 -> 5912 bytes
+ .../index/prime_check.cpp.AA65A2EEABBB0203.idx     | Bin 0 -> 378 bytes
+ .../clangd/index/pthread.h.BA62F334A4AE6D48.idx    | Bin 0 -> 21264 bytes
+ ...thread_stack_min-dynamic.h.7E1DF74F826CE798.idx | Bin 0 -> 318 bytes
+ .../index/pthreadtypes-arch.h.7355DCEE3967E5B5.idx | Bin 0 -> 354 bytes
+ .../index/pthreadtypes.h.2AB44129CC1055A5.idx      | Bin 0 -> 2352 bytes
+ .../clangd/index/ptr_traits.h.ED0D4ED110F3FE81.idx | Bin 0 -> 3462 bytes
+ .../index/range_access.h.4B8792248B0CEBD9.idx      | Bin 0 -> 2174 bytes
+ .../clangd/index/refwrap.h.F568F4D44FCE5C89.idx    | Bin 0 -> 5810 bytes
+ .../clangd/index/sched.h.39F1CA4363AA41A1.idx      | Bin 0 -> 1276 bytes
+ .../clangd/index/sched.h.5B833830F429325A.idx      | Bin 0 -> 1856 bytes
+ .../clangd/index/select.h.5CE3C1D53D97CBB2.idx     | Bin 0 -> 1148 bytes
+ .../clangd/index/select.h.BF31061F87713581.idx     | Bin 0 -> 184 bytes
+ .../clangd/index/setjmp.h.0A510298463002BF.idx     | Bin 0 -> 242 bytes
+ .../clangd/index/sigset_t.h.9D47EEA3E540F14D.idx   | Bin 0 -> 276 bytes
+ .../index/single_threaded.h.9D594F3F4DACE498.idx   | Bin 0 -> 344 bytes
+ .../clangd/index/std_abs.h.9233829C7B4A28D4.idx    | Bin 0 -> 836 bytes
+ .../clangd/index/stdarg.h.40261D04E61E9D5D.idx     | Bin 0 -> 232 bytes
+ .../index/stdc-predef.h.F7F17074D9579F84.idx       | Bin 0 -> 214 bytes
+ .../clangd/index/stddef.h.C489A51671CC9BA4.idx     | Bin 0 -> 1484 bytes
+ .../clangd/index/stdexcept.0DBDDA84A79ABC9C.idx    | Bin 0 -> 6968 bytes
+ .../index/stdint-intn.h.F209D82DB3718B74.idx       | Bin 0 -> 438 bytes
+ .../index/stdint-uintn.h.C24D57274B82F256.idx      | Bin 0 -> 438 bytes
+ .../clangd/index/stdint.h.4208DA0E8AD4B387.idx     | Bin 0 -> 3224 bytes
+ .../clangd/index/stdint.h.D115510B5D4F70FC.idx     | Bin 0 -> 214 bytes
+ .../clangd/index/stdio.h.39AA179546A5CA11.idx      | Bin 0 -> 12892 bytes
+ .../clangd/index/stdio_lim.h.8DBF51CB439C85C6.idx  | Bin 0 -> 232 bytes
+ .../index/stdlib-float.h.8EBAF3DEEC4148D7.idx      | Bin 0 -> 130 bytes
+ .../clangd/index/stdlib.h.9500795D2AE691D2.idx     | Bin 0 -> 19382 bytes
+ .../index/stl_algobase.h.C7B46FB02A8C2EEF.idx      | Bin 0 -> 19718 bytes
+ .../index/stl_construct.h.7D5D92E698DCD6B9.idx     | Bin 0 -> 1490 bytes
+ .../index/stl_function.h.43A66968918AB891.idx      | Bin 0 -> 18156 bytes
+ .../index/stl_iterator.h.D5268D76B42CE6DE.idx      | Bin 0 -> 17104 bytes
+ .../stl_iterator_base_funcs.h.A6FD10DD1DED5A0E.idx | Bin 0 -> 2368 bytes
+ .../stl_iterator_base_types.h.86D934CDD70E7E52.idx | Bin 0 -> 3690 bytes
+ .../clangd/index/stl_pair.h.E8B52F6E322E42F7.idx   | Bin 0 -> 8754 bytes
+ .../clangd/index/streambuf.24C4ABF9DE7545D7.idx    | Bin 0 -> 6142 bytes
+ .../index/streambuf.tcc.0B4D20DDC8EE1082.idx       | Bin 0 -> 836 bytes
+ .../streambuf_iterator.h.250F3FD5E6B97024.idx      | Bin 0 -> 4850 bytes
+ .../clangd/index/string.9A52383CF62E4774.idx       | Bin 0 -> 536 bytes
+ .../string_conversions.h.5D015112883CAFA6.idx      | Bin 0 -> 972 bytes
+ .../clangd/index/stringfwd.h.46F5354FF43D558B.idx  | Bin 0 -> 704 bytes
+ .../index/struct_FILE.h.381C91ADEB812BD0.idx       | Bin 0 -> 2138 bytes
+ .../struct___jmp_buf_tag.h.1A1FE82AE2A8C83E.idx    | Bin 0 -> 486 bytes
+ .../index/struct_itimerspec.h.F65912B0C23B963E.idx | Bin 0 -> 414 bytes
+ .../index/struct_mutex.h.B7FE399CFB3EE72A.idx      | Bin 0 -> 668 bytes
+ .../index/struct_rwlock.h.DC3BB7AA35AC6E1A.idx     | Bin 0 -> 868 bytes
+ .../struct_sched_param.h.CD7E2C8443A25D88.idx      | Bin 0 -> 302 bytes
+ .../index/struct_timespec.h.A8D8E9E445ABACD3.idx   | Bin 0 -> 518 bytes
+ .../index/struct_timeval.h.AF8389A65B9351D9.idx    | Bin 0 -> 416 bytes
+ .../clangd/index/struct_tm.h.DB4B8A2FCA6E502E.idx  | Bin 0 -> 838 bytes
+ .../clangd/index/stubs-64.h.2847EFCBD0B50F1C.idx   | Bin 0 -> 244 bytes
+ .../clangd/index/stubs.h.CDC9CE97F970174E.idx      | Bin 0 -> 140 bytes
+ .../clangd/index/system_error.73BA37BC3845EF0C.idx | Bin 0 -> 7460 bytes
+ .../thread-shared-types.h.3BD350B33FA93E57.idx     | Bin 0 -> 1378 bytes
+ .../clangd/index/time.h.406C037FEAE97D8D.idx       | Bin 0 -> 5858 bytes
+ .../clangd/index/time.h.CAE3AE26EEDD3617.idx       | Bin 0 -> 600 bytes
+ .../clangd/index/time64.h.F45FA1DA5DF8C4A3.idx     | Bin 0 -> 170 bytes
+ .../clangd/index/time_t.h.39DFD8EDDDC06944.idx     | Bin 0 -> 228 bytes
+ .../clangd/index/timer_t.h.C19EE5B24E70D289.idx    | Bin 0 -> 262 bytes
+ .../clangd/index/timesize.h.4A370235915877E5.idx   | Bin 0 -> 162 bytes
+ .../clangd/index/timex.h.42DA6DDF2F414475.idx      | Bin 0 -> 2078 bytes
+ .../clangd/index/type_traits.BF3C0E0846077307.idx  | Bin 0 -> 53538 bytes
+ .../index/type_traits.h.619F69D1F5E39E89.idx       | Bin 0 -> 4238 bytes
+ .../clangd/index/typeinfo.80DBFAB737BDBDEE.idx     | Bin 0 -> 2288 bytes
+ .../clangd/index/types.h.90E44DF27105B9F5.idx      | Bin 0 -> 3546 bytes
+ .../clangd/index/types.h.A3617F8DB832C1C0.idx      | Bin 0 -> 5304 bytes
+ .../clangd/index/typesizes.h.55F68CC1D9A79D64.idx  | Bin 0 -> 814 bytes
+ .../index/uintn-identity.h.CC2752B60898E5D5.idx    | Bin 0 -> 534 bytes
+ .../clangd/index/utility.h.08267A48FFBD693D.idx    | Bin 0 -> 3610 bytes
+ .../clangd/index/waitflags.h.3D8ABE61751FD5CF.idx  | Bin 0 -> 262 bytes
+ .../clangd/index/waitstatus.h.5F650F03B211ACBF.idx | Bin 0 -> 306 bytes
+ .../clangd/index/wchar.h.05540B9ED5ECA474.idx      | Bin 0 -> 168 bytes
+ .../clangd/index/wchar.h.A65FEA87E595D0B5.idx      | Bin 0 -> 12146 bytes
+ .../index/wctype-wchar.h.AC7BDF2A302849D2.idx      | Bin 0 -> 3462 bytes
+ .../clangd/index/wctype.h.7B6F632C96F4C730.idx     | Bin 0 -> 2540 bytes
+ .../clangd/index/wint_t.h.38B0F04FA117F6F8.idx     | Bin 0 -> 212 bytes
+ .../clangd/index/wordsize.h.4786D1A8F36BD2D6.idx   | Bin 0 -> 172 bytes
+ obj/.clangd/compile_commands.json                  |   1 +
+ obj/libnthprime.deps                               |   4 +
+ obj/main                                           | Bin 0 -> 17224 bytes
+ obj/main.cpp.stderr                                |   0
+ obj/main.cpp.stdout                                |   0
+ obj/nthprime-loc.xml                               |  90 +++++++++++++++++++++
+ obj/prime_check.cpp.stderr                         |   0
+ obj/prime_check.cpp.stdout                         |   0
+ src/.clang-format                                  |   6 ++
+ src/main.cpp                                       |  16 ++++
+ src/prime_check/prime_check.cpp                    |  43 ++++++++++
+ src/prime_check/prime_check.h                      |  10 +++
+ 194 files changed, 179 insertions(+)
+
+diff --git a/nthprime.gpr b/nthprime.gpr
+new file mode 100644
+index 0000000..aa3a0ee
+--- /dev/null
++++ b/nthprime.gpr
+@@ -0,0 +1,9 @@
++project Nthprime is
++
++   for Source_Dirs use ("src/prime_check/", "src");
++   for Object_Dir use "obj";
++   for Main use ("main.cpp");
++   for Languages use ("C++");
++
++end Nthprime;
++
+diff --git a/obj/.clangd/.cache/clangd/index/FILE.h.0B47AA35880D6C68.idx b/obj/.clangd/.cache/clangd/index/FILE.h.0B47AA35880D6C68.idx
+new file mode 100644
+index 0000000..2cd02c8
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/FILE.h.0B47AA35880D6C68.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/__FILE.h.6F8BF1EA128A85A8.idx b/obj/.clangd/.cache/clangd/index/__FILE.h.6F8BF1EA128A85A8.idx
+new file mode 100644
+index 0000000..dd6ed81
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/__FILE.h.6F8BF1EA128A85A8.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/__fpos64_t.h.76CFE28F9C6B8241.idx b/obj/.clangd/.cache/clangd/index/__fpos64_t.h.76CFE28F9C6B8241.idx
+new file mode 100644
+index 0000000..9425704
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/__fpos64_t.h.76CFE28F9C6B8241.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/__fpos_t.h.9C6C7821CAFB6728.idx b/obj/.clangd/.cache/clangd/index/__fpos_t.h.9C6C7821CAFB6728.idx
+new file mode 100644
+index 0000000..312b536
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/__fpos_t.h.9C6C7821CAFB6728.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/__locale_t.h.3F73A78C1398A1A9.idx b/obj/.clangd/.cache/clangd/index/__locale_t.h.3F73A78C1398A1A9.idx
+new file mode 100644
+index 0000000..ba85c68
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/__locale_t.h.3F73A78C1398A1A9.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/__mbstate_t.h.18CD360ACD7D77DA.idx b/obj/.clangd/.cache/clangd/index/__mbstate_t.h.18CD360ACD7D77DA.idx
+new file mode 100644
+index 0000000..bcf1d17
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/__mbstate_t.h.18CD360ACD7D77DA.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/__sigset_t.h.6BFEE909145251C5.idx b/obj/.clangd/.cache/clangd/index/__sigset_t.h.6BFEE909145251C5.idx
+new file mode 100644
+index 0000000..ec02b53
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/__sigset_t.h.6BFEE909145251C5.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/alloc_traits.h.DE99E4A907B8EC89.idx b/obj/.clangd/.cache/clangd/index/alloc_traits.h.DE99E4A907B8EC89.idx
+new file mode 100644
+index 0000000..191182a
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/alloc_traits.h.DE99E4A907B8EC89.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/alloc_traits.h.FC35C6F0E247A996.idx b/obj/.clangd/.cache/clangd/index/alloc_traits.h.FC35C6F0E247A996.idx
+new file mode 100644
+index 0000000..31a3d91
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/alloc_traits.h.FC35C6F0E247A996.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/alloca.h.B3C3404035C15EA6.idx b/obj/.clangd/.cache/clangd/index/alloca.h.B3C3404035C15EA6.idx
+new file mode 100644
+index 0000000..bfb742a
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/alloca.h.B3C3404035C15EA6.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/allocator.h.F269DAB237B74714.idx b/obj/.clangd/.cache/clangd/index/allocator.h.F269DAB237B74714.idx
+new file mode 100644
+index 0000000..2c2372b
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/allocator.h.F269DAB237B74714.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/assertions.h.4D1CB26F36FC581B.idx b/obj/.clangd/.cache/clangd/index/assertions.h.4D1CB26F36FC581B.idx
+new file mode 100644
+index 0000000..6a4269f
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/assertions.h.4D1CB26F36FC581B.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/atomic_wide_counter.h.56DB1510DB559888.idx b/obj/.clangd/.cache/clangd/index/atomic_wide_counter.h.56DB1510DB559888.idx
+new file mode 100644
+index 0000000..e649c53
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/atomic_wide_counter.h.56DB1510DB559888.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/atomic_word.h.816B05CE7EB8F502.idx b/obj/.clangd/.cache/clangd/index/atomic_word.h.816B05CE7EB8F502.idx
+new file mode 100644
+index 0000000..57a7790
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/atomic_word.h.816B05CE7EB8F502.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/atomicity.h.BD26CDADD949DF9E.idx b/obj/.clangd/.cache/clangd/index/atomicity.h.BD26CDADD949DF9E.idx
+new file mode 100644
+index 0000000..058d2f9
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/atomicity.h.BD26CDADD949DF9E.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/basic_ios.h.32EC5AE48F357591.idx b/obj/.clangd/.cache/clangd/index/basic_ios.h.32EC5AE48F357591.idx
+new file mode 100644
+index 0000000..95b1f6f
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/basic_ios.h.32EC5AE48F357591.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/basic_ios.tcc.8B07C7570F397FBB.idx b/obj/.clangd/.cache/clangd/index/basic_ios.tcc.8B07C7570F397FBB.idx
+new file mode 100644
+index 0000000..16d5b98
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/basic_ios.tcc.8B07C7570F397FBB.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/basic_string.h.4FA5E761D595F3D8.idx b/obj/.clangd/.cache/clangd/index/basic_string.h.4FA5E761D595F3D8.idx
+new file mode 100644
+index 0000000..335ffa9
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/basic_string.h.4FA5E761D595F3D8.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/basic_string.tcc.44C69969E0950E5D.idx b/obj/.clangd/.cache/clangd/index/basic_string.tcc.44C69969E0950E5D.idx
+new file mode 100644
+index 0000000..9f59f10
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/basic_string.tcc.44C69969E0950E5D.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/binders.h.02AD1C14CFEBE3F9.idx b/obj/.clangd/.cache/clangd/index/binders.h.02AD1C14CFEBE3F9.idx
+new file mode 100644
+index 0000000..5305ebc
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/binders.h.02AD1C14CFEBE3F9.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/byteswap.h.6F2302C3C3B7048C.idx b/obj/.clangd/.cache/clangd/index/byteswap.h.6F2302C3C3B7048C.idx
+new file mode 100644
+index 0000000..af64050
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/byteswap.h.6F2302C3C3B7048C.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/c++allocator.h.02DC8F879514F82D.idx b/obj/.clangd/.cache/clangd/index/c++allocator.h.02DC8F879514F82D.idx
+new file mode 100644
+index 0000000..cbb993a
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/c++allocator.h.02DC8F879514F82D.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/c++config.h.5B37CD559DD242E1.idx b/obj/.clangd/.cache/clangd/index/c++config.h.5B37CD559DD242E1.idx
+new file mode 100644
+index 0000000..3175e31
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/c++config.h.5B37CD559DD242E1.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/c++locale.h.23F7D49ACAC605D4.idx b/obj/.clangd/.cache/clangd/index/c++locale.h.23F7D49ACAC605D4.idx
+new file mode 100644
+index 0000000..47fb4e4
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/c++locale.h.23F7D49ACAC605D4.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/cctype.F73B8BB2D9B03303.idx b/obj/.clangd/.cache/clangd/index/cctype.F73B8BB2D9B03303.idx
+new file mode 100644
+index 0000000..b6570f8
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/cctype.F73B8BB2D9B03303.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/cdefs.h.8113CACA75BA375E.idx b/obj/.clangd/.cache/clangd/index/cdefs.h.8113CACA75BA375E.idx
+new file mode 100644
+index 0000000..90a97ea
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/cdefs.h.8113CACA75BA375E.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/cerrno.D19D769407AD4F87.idx b/obj/.clangd/.cache/clangd/index/cerrno.D19D769407AD4F87.idx
+new file mode 100644
+index 0000000..81d5ed5
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/cerrno.D19D769407AD4F87.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/char_traits.h.58E1BA7568F3AE10.idx b/obj/.clangd/.cache/clangd/index/char_traits.h.58E1BA7568F3AE10.idx
+new file mode 100644
+index 0000000..b0915a3
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/char_traits.h.58E1BA7568F3AE10.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/charconv.h.26815F6D61E55410.idx b/obj/.clangd/.cache/clangd/index/charconv.h.26815F6D61E55410.idx
+new file mode 100644
+index 0000000..3bd53de
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/charconv.h.26815F6D61E55410.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/clocale.E6F83AA5311903CB.idx b/obj/.clangd/.cache/clangd/index/clocale.E6F83AA5311903CB.idx
+new file mode 100644
+index 0000000..4462ee6
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/clocale.E6F83AA5311903CB.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/clock_t.h.4298E782D79C8AAE.idx b/obj/.clangd/.cache/clangd/index/clock_t.h.4298E782D79C8AAE.idx
+new file mode 100644
+index 0000000..f4a0c1d
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/clock_t.h.4298E782D79C8AAE.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/clockid_t.h.BE41EEDE18978A00.idx b/obj/.clangd/.cache/clangd/index/clockid_t.h.BE41EEDE18978A00.idx
+new file mode 100644
+index 0000000..e514dc7
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/clockid_t.h.BE41EEDE18978A00.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/concept_check.h.67C690C5C532A4CA.idx b/obj/.clangd/.cache/clangd/index/concept_check.h.67C690C5C532A4CA.idx
+new file mode 100644
+index 0000000..60810e9
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/concept_check.h.67C690C5C532A4CA.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/cookie_io_functions_t.h.F008C27662A34FC7.idx b/obj/.clangd/.cache/clangd/index/cookie_io_functions_t.h.F008C27662A34FC7.idx
+new file mode 100644
+index 0000000..0becace
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/cookie_io_functions_t.h.F008C27662A34FC7.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/cpp_type_traits.h.F0542441C138C0AB.idx b/obj/.clangd/.cache/clangd/index/cpp_type_traits.h.F0542441C138C0AB.idx
+new file mode 100644
+index 0000000..65f7d93
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/cpp_type_traits.h.F0542441C138C0AB.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/cpu-set.h.E2616A97511B788D.idx b/obj/.clangd/.cache/clangd/index/cpu-set.h.E2616A97511B788D.idx
+new file mode 100644
+index 0000000..8bff4fc
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/cpu-set.h.E2616A97511B788D.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/cpu_defines.h.E76556EE97FC472D.idx b/obj/.clangd/.cache/clangd/index/cpu_defines.h.E76556EE97FC472D.idx
+new file mode 100644
+index 0000000..d406e1c
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/cpu_defines.h.E76556EE97FC472D.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/cstdint.CED58966CDFA7386.idx b/obj/.clangd/.cache/clangd/index/cstdint.CED58966CDFA7386.idx
+new file mode 100644
+index 0000000..84aa8c5
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/cstdint.CED58966CDFA7386.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/cstdio.9926451A3C65B667.idx b/obj/.clangd/.cache/clangd/index/cstdio.9926451A3C65B667.idx
+new file mode 100644
+index 0000000..6842525
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/cstdio.9926451A3C65B667.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/cstdlib.E700053B2DC797BE.idx b/obj/.clangd/.cache/clangd/index/cstdlib.E700053B2DC797BE.idx
+new file mode 100644
+index 0000000..3e933ab
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/cstdlib.E700053B2DC797BE.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/ctype.h.8C666B63C116FFB8.idx b/obj/.clangd/.cache/clangd/index/ctype.h.8C666B63C116FFB8.idx
+new file mode 100644
+index 0000000..8d9fc7c
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/ctype.h.8C666B63C116FFB8.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/ctype_base.h.84A386BCB497613E.idx b/obj/.clangd/.cache/clangd/index/ctype_base.h.84A386BCB497613E.idx
+new file mode 100644
+index 0000000..e48cf19
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/ctype_base.h.84A386BCB497613E.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/ctype_inline.h.D42A35D51B9983D8.idx b/obj/.clangd/.cache/clangd/index/ctype_inline.h.D42A35D51B9983D8.idx
+new file mode 100644
+index 0000000..2b494e5
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/ctype_inline.h.D42A35D51B9983D8.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/cwchar.224502E3F0F8F816.idx b/obj/.clangd/.cache/clangd/index/cwchar.224502E3F0F8F816.idx
+new file mode 100644
+index 0000000..32d3f2e
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/cwchar.224502E3F0F8F816.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/cwctype.A27255B363348FE5.idx b/obj/.clangd/.cache/clangd/index/cwctype.A27255B363348FE5.idx
+new file mode 100644
+index 0000000..abbed90
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/cwctype.A27255B363348FE5.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/cxxabi_forced.h.F94AA128CED523F6.idx b/obj/.clangd/.cache/clangd/index/cxxabi_forced.h.F94AA128CED523F6.idx
+new file mode 100644
+index 0000000..e165091
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/cxxabi_forced.h.F94AA128CED523F6.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/cxxabi_init_exception.h.2411603366B7A116.idx b/obj/.clangd/.cache/clangd/index/cxxabi_init_exception.h.2411603366B7A116.idx
+new file mode 100644
+index 0000000..933889b
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/cxxabi_init_exception.h.2411603366B7A116.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/debug.h.6606D4EF0F0F2B1B.idx b/obj/.clangd/.cache/clangd/index/debug.h.6606D4EF0F0F2B1B.idx
+new file mode 100644
+index 0000000..7d7baa3
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/debug.h.6606D4EF0F0F2B1B.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/endian.h.86AC4579400E1F3C.idx b/obj/.clangd/.cache/clangd/index/endian.h.86AC4579400E1F3C.idx
+new file mode 100644
+index 0000000..9f9f7f0
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/endian.h.86AC4579400E1F3C.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/endian.h.CBC7B63F4780E810.idx b/obj/.clangd/.cache/clangd/index/endian.h.CBC7B63F4780E810.idx
+new file mode 100644
+index 0000000..9995aa3
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/endian.h.CBC7B63F4780E810.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/endianness.h.63FFD0703BF37E41.idx b/obj/.clangd/.cache/clangd/index/endianness.h.63FFD0703BF37E41.idx
+new file mode 100644
+index 0000000..9b82e82
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/endianness.h.63FFD0703BF37E41.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/errno-base.h.6103700F2A961E57.idx b/obj/.clangd/.cache/clangd/index/errno-base.h.6103700F2A961E57.idx
+new file mode 100644
+index 0000000..ec2a438
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/errno-base.h.6103700F2A961E57.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/errno.h.061397FDE4C98757.idx b/obj/.clangd/.cache/clangd/index/errno.h.061397FDE4C98757.idx
+new file mode 100644
+index 0000000..c7a7d00
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/errno.h.061397FDE4C98757.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/errno.h.3B388C5618606E4B.idx b/obj/.clangd/.cache/clangd/index/errno.h.3B388C5618606E4B.idx
+new file mode 100644
+index 0000000..4870de8
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/errno.h.3B388C5618606E4B.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/errno.h.976E2F7993D5837D.idx b/obj/.clangd/.cache/clangd/index/errno.h.976E2F7993D5837D.idx
+new file mode 100644
+index 0000000..85fd465
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/errno.h.976E2F7993D5837D.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/errno.h.D9D8241F3E79ABDF.idx b/obj/.clangd/.cache/clangd/index/errno.h.D9D8241F3E79ABDF.idx
+new file mode 100644
+index 0000000..98fcaca
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/errno.h.D9D8241F3E79ABDF.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/errno.h.ED5CC3F31B3B565F.idx b/obj/.clangd/.cache/clangd/index/errno.h.ED5CC3F31B3B565F.idx
+new file mode 100644
+index 0000000..239e3ea
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/errno.h.ED5CC3F31B3B565F.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/error_constants.h.013EFABF389784A0.idx b/obj/.clangd/.cache/clangd/index/error_constants.h.013EFABF389784A0.idx
+new file mode 100644
+index 0000000..73336a1
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/error_constants.h.013EFABF389784A0.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/error_t.h.A969CA67F72DCE1C.idx b/obj/.clangd/.cache/clangd/index/error_t.h.A969CA67F72DCE1C.idx
+new file mode 100644
+index 0000000..771fa46
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/error_t.h.A969CA67F72DCE1C.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/exception.5AC4E82D340561F7.idx b/obj/.clangd/.cache/clangd/index/exception.5AC4E82D340561F7.idx
+new file mode 100644
+index 0000000..d80d467
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/exception.5AC4E82D340561F7.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/exception.h.016D8173AE9B8AC6.idx b/obj/.clangd/.cache/clangd/index/exception.h.016D8173AE9B8AC6.idx
+new file mode 100644
+index 0000000..0ca0b96
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/exception.h.016D8173AE9B8AC6.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/exception_defines.h.8C68C6254AF026FB.idx b/obj/.clangd/.cache/clangd/index/exception_defines.h.8C68C6254AF026FB.idx
+new file mode 100644
+index 0000000..4ed82a3
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/exception_defines.h.8C68C6254AF026FB.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/exception_ptr.h.6AF22A03AB69085B.idx b/obj/.clangd/.cache/clangd/index/exception_ptr.h.6AF22A03AB69085B.idx
+new file mode 100644
+index 0000000..35fe06d
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/exception_ptr.h.6AF22A03AB69085B.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/features-time64.h.C0452545283792D6.idx b/obj/.clangd/.cache/clangd/index/features-time64.h.C0452545283792D6.idx
+new file mode 100644
+index 0000000..c3164a2
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/features-time64.h.C0452545283792D6.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/features.h.839A4F3F7C9A4375.idx b/obj/.clangd/.cache/clangd/index/features.h.839A4F3F7C9A4375.idx
+new file mode 100644
+index 0000000..f83021d
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/features.h.839A4F3F7C9A4375.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/floatn-common.h.220778C34B31099D.idx b/obj/.clangd/.cache/clangd/index/floatn-common.h.220778C34B31099D.idx
+new file mode 100644
+index 0000000..c98427c
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/floatn-common.h.220778C34B31099D.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/floatn.h.987689782B9EAADF.idx b/obj/.clangd/.cache/clangd/index/floatn.h.987689782B9EAADF.idx
+new file mode 100644
+index 0000000..40716b8
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/floatn.h.987689782B9EAADF.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/functexcept.h.C93AC7EEC2C52E01.idx b/obj/.clangd/.cache/clangd/index/functexcept.h.C93AC7EEC2C52E01.idx
+new file mode 100644
+index 0000000..c89207e
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/functexcept.h.C93AC7EEC2C52E01.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/functional_hash.h.CA9CDD5F7806E291.idx b/obj/.clangd/.cache/clangd/index/functional_hash.h.CA9CDD5F7806E291.idx
+new file mode 100644
+index 0000000..13e8f5b
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/functional_hash.h.CA9CDD5F7806E291.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/gthr-default.h.C621C06A637A6F8F.idx b/obj/.clangd/.cache/clangd/index/gthr-default.h.C621C06A637A6F8F.idx
+new file mode 100644
+index 0000000..9dfe0c1
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/gthr-default.h.C621C06A637A6F8F.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/gthr.h.D20340D9A16F961F.idx b/obj/.clangd/.cache/clangd/index/gthr.h.D20340D9A16F961F.idx
+new file mode 100644
+index 0000000..cfb718e
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/gthr.h.D20340D9A16F961F.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/hash_bytes.h.089D00327443A67F.idx b/obj/.clangd/.cache/clangd/index/hash_bytes.h.089D00327443A67F.idx
+new file mode 100644
+index 0000000..40c5c11
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/hash_bytes.h.089D00327443A67F.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/initializer_list.7ED07824519A193E.idx b/obj/.clangd/.cache/clangd/index/initializer_list.7ED07824519A193E.idx
+new file mode 100644
+index 0000000..0895349
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/initializer_list.7ED07824519A193E.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/invoke.h.E7897D8743CE7629.idx b/obj/.clangd/.cache/clangd/index/invoke.h.E7897D8743CE7629.idx
+new file mode 100644
+index 0000000..7ea35b0
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/invoke.h.E7897D8743CE7629.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/ios.46C5572D2070B331.idx b/obj/.clangd/.cache/clangd/index/ios.46C5572D2070B331.idx
+new file mode 100644
+index 0000000..5272115
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/ios.46C5572D2070B331.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/ios_base.h.45FDD048C8971AC9.idx b/obj/.clangd/.cache/clangd/index/ios_base.h.45FDD048C8971AC9.idx
+new file mode 100644
+index 0000000..b2283d8
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/ios_base.h.45FDD048C8971AC9.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/iosfwd.3E4EFAF68C9ED157.idx b/obj/.clangd/.cache/clangd/index/iosfwd.3E4EFAF68C9ED157.idx
+new file mode 100644
+index 0000000..ee44053
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/iosfwd.3E4EFAF68C9ED157.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/iostream.08CF117662E69EDE.idx b/obj/.clangd/.cache/clangd/index/iostream.08CF117662E69EDE.idx
+new file mode 100644
+index 0000000..31b93a2
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/iostream.08CF117662E69EDE.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/istream.41B33D6E3B3EF0BC.idx b/obj/.clangd/.cache/clangd/index/istream.41B33D6E3B3EF0BC.idx
+new file mode 100644
+index 0000000..ce42a02
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/istream.41B33D6E3B3EF0BC.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/istream.tcc.32332A358838F0C9.idx b/obj/.clangd/.cache/clangd/index/istream.tcc.32332A358838F0C9.idx
+new file mode 100644
+index 0000000..0a97a41
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/istream.tcc.32332A358838F0C9.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/libc-header-start.h.DE4EC70643B7CD1B.idx b/obj/.clangd/.cache/clangd/index/libc-header-start.h.DE4EC70643B7CD1B.idx
+new file mode 100644
+index 0000000..2ee1618
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/libc-header-start.h.DE4EC70643B7CD1B.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/locale.h.5F1EA2E91D0CD92F.idx b/obj/.clangd/.cache/clangd/index/locale.h.5F1EA2E91D0CD92F.idx
+new file mode 100644
+index 0000000..0c68c30
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/locale.h.5F1EA2E91D0CD92F.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/locale.h.AF6D7871B4798B5C.idx b/obj/.clangd/.cache/clangd/index/locale.h.AF6D7871B4798B5C.idx
+new file mode 100644
+index 0000000..8dbd1ec
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/locale.h.AF6D7871B4798B5C.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/locale_classes.h.AB11DDD1C0573C23.idx b/obj/.clangd/.cache/clangd/index/locale_classes.h.AB11DDD1C0573C23.idx
+new file mode 100644
+index 0000000..3061e4b
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/locale_classes.h.AB11DDD1C0573C23.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/locale_classes.tcc.5D2D8AB5C54E63EB.idx b/obj/.clangd/.cache/clangd/index/locale_classes.tcc.5D2D8AB5C54E63EB.idx
+new file mode 100644
+index 0000000..22f0a2d
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/locale_classes.tcc.5D2D8AB5C54E63EB.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/locale_facets.h.5F8A2DCE8F2152AF.idx b/obj/.clangd/.cache/clangd/index/locale_facets.h.5F8A2DCE8F2152AF.idx
+new file mode 100644
+index 0000000..43636e2
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/locale_facets.h.5F8A2DCE8F2152AF.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/locale_facets.tcc.AD539B3450199EEB.idx b/obj/.clangd/.cache/clangd/index/locale_facets.tcc.AD539B3450199EEB.idx
+new file mode 100644
+index 0000000..3626555
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/locale_facets.tcc.AD539B3450199EEB.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/locale_t.h.34B89A0475C69266.idx b/obj/.clangd/.cache/clangd/index/locale_t.h.34B89A0475C69266.idx
+new file mode 100644
+index 0000000..6b68900
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/locale_t.h.34B89A0475C69266.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/localefwd.h.774D62117C0942D9.idx b/obj/.clangd/.cache/clangd/index/localefwd.h.774D62117C0942D9.idx
+new file mode 100644
+index 0000000..c907980
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/localefwd.h.774D62117C0942D9.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/long-double.h.4E9A278B5D22A190.idx b/obj/.clangd/.cache/clangd/index/long-double.h.4E9A278B5D22A190.idx
+new file mode 100644
+index 0000000..e1a7341
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/long-double.h.4E9A278B5D22A190.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/main.cpp.C60D1A7A99B9E840.idx b/obj/.clangd/.cache/clangd/index/main.cpp.C60D1A7A99B9E840.idx
+new file mode 100644
+index 0000000..4cdf178
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/main.cpp.C60D1A7A99B9E840.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/mbstate_t.h.90C0B8AE7F2F3969.idx b/obj/.clangd/.cache/clangd/index/mbstate_t.h.90C0B8AE7F2F3969.idx
+new file mode 100644
+index 0000000..2e550e7
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/mbstate_t.h.90C0B8AE7F2F3969.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/memoryfwd.h.8AB54381D6C7E51E.idx b/obj/.clangd/.cache/clangd/index/memoryfwd.h.8AB54381D6C7E51E.idx
+new file mode 100644
+index 0000000..d045ae2
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/memoryfwd.h.8AB54381D6C7E51E.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/move.h.AC1E8A3DCAE48E69.idx b/obj/.clangd/.cache/clangd/index/move.h.AC1E8A3DCAE48E69.idx
+new file mode 100644
+index 0000000..b1a5627
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/move.h.AC1E8A3DCAE48E69.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/nested_exception.h.39B4B8EB1E17D2D4.idx b/obj/.clangd/.cache/clangd/index/nested_exception.h.39B4B8EB1E17D2D4.idx
+new file mode 100644
+index 0000000..5fd0620
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/nested_exception.h.39B4B8EB1E17D2D4.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/new.0A717E25D1098CD4.idx b/obj/.clangd/.cache/clangd/index/new.0A717E25D1098CD4.idx
+new file mode 100644
+index 0000000..193ab5d
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/new.0A717E25D1098CD4.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/new_allocator.h.386B8B158780E214.idx b/obj/.clangd/.cache/clangd/index/new_allocator.h.386B8B158780E214.idx
+new file mode 100644
+index 0000000..ce7921e
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/new_allocator.h.386B8B158780E214.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/numeric_traits.h.ADA4EBBBBD9EBB8F.idx b/obj/.clangd/.cache/clangd/index/numeric_traits.h.ADA4EBBBBD9EBB8F.idx
+new file mode 100644
+index 0000000..0158db9
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/numeric_traits.h.ADA4EBBBBD9EBB8F.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/os_defines.h.1A0BD3E7977A03AA.idx b/obj/.clangd/.cache/clangd/index/os_defines.h.1A0BD3E7977A03AA.idx
+new file mode 100644
+index 0000000..090b54e
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/os_defines.h.1A0BD3E7977A03AA.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/ostream.21BF8E05095109AC.idx b/obj/.clangd/.cache/clangd/index/ostream.21BF8E05095109AC.idx
+new file mode 100644
+index 0000000..c537d76
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/ostream.21BF8E05095109AC.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/ostream.tcc.F4641B0D58FDDFB9.idx b/obj/.clangd/.cache/clangd/index/ostream.tcc.F4641B0D58FDDFB9.idx
+new file mode 100644
+index 0000000..e2d8d59
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/ostream.tcc.F4641B0D58FDDFB9.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/ostream_insert.h.75078E365DABE5F4.idx b/obj/.clangd/.cache/clangd/index/ostream_insert.h.75078E365DABE5F4.idx
+new file mode 100644
+index 0000000..35b79f0
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/ostream_insert.h.75078E365DABE5F4.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/postypes.h.FECE8BA2D1A686B7.idx b/obj/.clangd/.cache/clangd/index/postypes.h.FECE8BA2D1A686B7.idx
+new file mode 100644
+index 0000000..4d2abb3
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/postypes.h.FECE8BA2D1A686B7.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/predefined_ops.h.9616FAA42FA62982.idx b/obj/.clangd/.cache/clangd/index/predefined_ops.h.9616FAA42FA62982.idx
+new file mode 100644
+index 0000000..7076e5f
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/predefined_ops.h.9616FAA42FA62982.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/prime_check.cpp.AA65A2EEABBB0203.idx b/obj/.clangd/.cache/clangd/index/prime_check.cpp.AA65A2EEABBB0203.idx
+new file mode 100644
+index 0000000..d042e5f
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/prime_check.cpp.AA65A2EEABBB0203.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/pthread.h.BA62F334A4AE6D48.idx b/obj/.clangd/.cache/clangd/index/pthread.h.BA62F334A4AE6D48.idx
+new file mode 100644
+index 0000000..9332d62
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/pthread.h.BA62F334A4AE6D48.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/pthread_stack_min-dynamic.h.7E1DF74F826CE798.idx b/obj/.clangd/.cache/clangd/index/pthread_stack_min-dynamic.h.7E1DF74F826CE798.idx
+new file mode 100644
+index 0000000..0f57a51
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/pthread_stack_min-dynamic.h.7E1DF74F826CE798.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/pthreadtypes-arch.h.7355DCEE3967E5B5.idx b/obj/.clangd/.cache/clangd/index/pthreadtypes-arch.h.7355DCEE3967E5B5.idx
+new file mode 100644
+index 0000000..e2d8f15
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/pthreadtypes-arch.h.7355DCEE3967E5B5.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/pthreadtypes.h.2AB44129CC1055A5.idx b/obj/.clangd/.cache/clangd/index/pthreadtypes.h.2AB44129CC1055A5.idx
+new file mode 100644
+index 0000000..7952bae
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/pthreadtypes.h.2AB44129CC1055A5.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/ptr_traits.h.ED0D4ED110F3FE81.idx b/obj/.clangd/.cache/clangd/index/ptr_traits.h.ED0D4ED110F3FE81.idx
+new file mode 100644
+index 0000000..62bb7de
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/ptr_traits.h.ED0D4ED110F3FE81.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/range_access.h.4B8792248B0CEBD9.idx b/obj/.clangd/.cache/clangd/index/range_access.h.4B8792248B0CEBD9.idx
+new file mode 100644
+index 0000000..dd28792
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/range_access.h.4B8792248B0CEBD9.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/refwrap.h.F568F4D44FCE5C89.idx b/obj/.clangd/.cache/clangd/index/refwrap.h.F568F4D44FCE5C89.idx
+new file mode 100644
+index 0000000..6e98026
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/refwrap.h.F568F4D44FCE5C89.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/sched.h.39F1CA4363AA41A1.idx b/obj/.clangd/.cache/clangd/index/sched.h.39F1CA4363AA41A1.idx
+new file mode 100644
+index 0000000..b198c9e
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/sched.h.39F1CA4363AA41A1.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/sched.h.5B833830F429325A.idx b/obj/.clangd/.cache/clangd/index/sched.h.5B833830F429325A.idx
+new file mode 100644
+index 0000000..0bf476f
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/sched.h.5B833830F429325A.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/select.h.5CE3C1D53D97CBB2.idx b/obj/.clangd/.cache/clangd/index/select.h.5CE3C1D53D97CBB2.idx
+new file mode 100644
+index 0000000..8eb28b8
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/select.h.5CE3C1D53D97CBB2.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/select.h.BF31061F87713581.idx b/obj/.clangd/.cache/clangd/index/select.h.BF31061F87713581.idx
+new file mode 100644
+index 0000000..6f17ca1
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/select.h.BF31061F87713581.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/setjmp.h.0A510298463002BF.idx b/obj/.clangd/.cache/clangd/index/setjmp.h.0A510298463002BF.idx
+new file mode 100644
+index 0000000..0a56630
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/setjmp.h.0A510298463002BF.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/sigset_t.h.9D47EEA3E540F14D.idx b/obj/.clangd/.cache/clangd/index/sigset_t.h.9D47EEA3E540F14D.idx
+new file mode 100644
+index 0000000..0bf7bc7
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/sigset_t.h.9D47EEA3E540F14D.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/single_threaded.h.9D594F3F4DACE498.idx b/obj/.clangd/.cache/clangd/index/single_threaded.h.9D594F3F4DACE498.idx
+new file mode 100644
+index 0000000..363241b
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/single_threaded.h.9D594F3F4DACE498.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/std_abs.h.9233829C7B4A28D4.idx b/obj/.clangd/.cache/clangd/index/std_abs.h.9233829C7B4A28D4.idx
+new file mode 100644
+index 0000000..bc85556
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/std_abs.h.9233829C7B4A28D4.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/stdarg.h.40261D04E61E9D5D.idx b/obj/.clangd/.cache/clangd/index/stdarg.h.40261D04E61E9D5D.idx
+new file mode 100644
+index 0000000..041175b
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/stdarg.h.40261D04E61E9D5D.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/stdc-predef.h.F7F17074D9579F84.idx b/obj/.clangd/.cache/clangd/index/stdc-predef.h.F7F17074D9579F84.idx
+new file mode 100644
+index 0000000..70ebd72
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/stdc-predef.h.F7F17074D9579F84.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/stddef.h.C489A51671CC9BA4.idx b/obj/.clangd/.cache/clangd/index/stddef.h.C489A51671CC9BA4.idx
+new file mode 100644
+index 0000000..9a0f578
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/stddef.h.C489A51671CC9BA4.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/stdexcept.0DBDDA84A79ABC9C.idx b/obj/.clangd/.cache/clangd/index/stdexcept.0DBDDA84A79ABC9C.idx
+new file mode 100644
+index 0000000..8771521
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/stdexcept.0DBDDA84A79ABC9C.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/stdint-intn.h.F209D82DB3718B74.idx b/obj/.clangd/.cache/clangd/index/stdint-intn.h.F209D82DB3718B74.idx
+new file mode 100644
+index 0000000..bb91ee9
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/stdint-intn.h.F209D82DB3718B74.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/stdint-uintn.h.C24D57274B82F256.idx b/obj/.clangd/.cache/clangd/index/stdint-uintn.h.C24D57274B82F256.idx
+new file mode 100644
+index 0000000..229dcbb
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/stdint-uintn.h.C24D57274B82F256.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/stdint.h.4208DA0E8AD4B387.idx b/obj/.clangd/.cache/clangd/index/stdint.h.4208DA0E8AD4B387.idx
+new file mode 100644
+index 0000000..f722a73
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/stdint.h.4208DA0E8AD4B387.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/stdint.h.D115510B5D4F70FC.idx b/obj/.clangd/.cache/clangd/index/stdint.h.D115510B5D4F70FC.idx
+new file mode 100644
+index 0000000..444d273
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/stdint.h.D115510B5D4F70FC.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/stdio.h.39AA179546A5CA11.idx b/obj/.clangd/.cache/clangd/index/stdio.h.39AA179546A5CA11.idx
+new file mode 100644
+index 0000000..f719c14
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/stdio.h.39AA179546A5CA11.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/stdio_lim.h.8DBF51CB439C85C6.idx b/obj/.clangd/.cache/clangd/index/stdio_lim.h.8DBF51CB439C85C6.idx
+new file mode 100644
+index 0000000..5fdf2f5
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/stdio_lim.h.8DBF51CB439C85C6.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/stdlib-float.h.8EBAF3DEEC4148D7.idx b/obj/.clangd/.cache/clangd/index/stdlib-float.h.8EBAF3DEEC4148D7.idx
+new file mode 100644
+index 0000000..9a44f90
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/stdlib-float.h.8EBAF3DEEC4148D7.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/stdlib.h.9500795D2AE691D2.idx b/obj/.clangd/.cache/clangd/index/stdlib.h.9500795D2AE691D2.idx
+new file mode 100644
+index 0000000..1171acf
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/stdlib.h.9500795D2AE691D2.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/stl_algobase.h.C7B46FB02A8C2EEF.idx b/obj/.clangd/.cache/clangd/index/stl_algobase.h.C7B46FB02A8C2EEF.idx
+new file mode 100644
+index 0000000..278b021
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/stl_algobase.h.C7B46FB02A8C2EEF.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/stl_construct.h.7D5D92E698DCD6B9.idx b/obj/.clangd/.cache/clangd/index/stl_construct.h.7D5D92E698DCD6B9.idx
+new file mode 100644
+index 0000000..65cce6b
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/stl_construct.h.7D5D92E698DCD6B9.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/stl_function.h.43A66968918AB891.idx b/obj/.clangd/.cache/clangd/index/stl_function.h.43A66968918AB891.idx
+new file mode 100644
+index 0000000..8638145
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/stl_function.h.43A66968918AB891.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/stl_iterator.h.D5268D76B42CE6DE.idx b/obj/.clangd/.cache/clangd/index/stl_iterator.h.D5268D76B42CE6DE.idx
+new file mode 100644
+index 0000000..3c2de76
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/stl_iterator.h.D5268D76B42CE6DE.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/stl_iterator_base_funcs.h.A6FD10DD1DED5A0E.idx b/obj/.clangd/.cache/clangd/index/stl_iterator_base_funcs.h.A6FD10DD1DED5A0E.idx
+new file mode 100644
+index 0000000..807a6e4
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/stl_iterator_base_funcs.h.A6FD10DD1DED5A0E.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/stl_iterator_base_types.h.86D934CDD70E7E52.idx b/obj/.clangd/.cache/clangd/index/stl_iterator_base_types.h.86D934CDD70E7E52.idx
+new file mode 100644
+index 0000000..1367dc9
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/stl_iterator_base_types.h.86D934CDD70E7E52.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/stl_pair.h.E8B52F6E322E42F7.idx b/obj/.clangd/.cache/clangd/index/stl_pair.h.E8B52F6E322E42F7.idx
+new file mode 100644
+index 0000000..51c5a40
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/stl_pair.h.E8B52F6E322E42F7.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/streambuf.24C4ABF9DE7545D7.idx b/obj/.clangd/.cache/clangd/index/streambuf.24C4ABF9DE7545D7.idx
+new file mode 100644
+index 0000000..2734f11
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/streambuf.24C4ABF9DE7545D7.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/streambuf.tcc.0B4D20DDC8EE1082.idx b/obj/.clangd/.cache/clangd/index/streambuf.tcc.0B4D20DDC8EE1082.idx
+new file mode 100644
+index 0000000..f81873d
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/streambuf.tcc.0B4D20DDC8EE1082.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/streambuf_iterator.h.250F3FD5E6B97024.idx b/obj/.clangd/.cache/clangd/index/streambuf_iterator.h.250F3FD5E6B97024.idx
+new file mode 100644
+index 0000000..fe82cb5
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/streambuf_iterator.h.250F3FD5E6B97024.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/string.9A52383CF62E4774.idx b/obj/.clangd/.cache/clangd/index/string.9A52383CF62E4774.idx
+new file mode 100644
+index 0000000..a4a3f83
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/string.9A52383CF62E4774.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/string_conversions.h.5D015112883CAFA6.idx b/obj/.clangd/.cache/clangd/index/string_conversions.h.5D015112883CAFA6.idx
+new file mode 100644
+index 0000000..e414553
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/string_conversions.h.5D015112883CAFA6.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/stringfwd.h.46F5354FF43D558B.idx b/obj/.clangd/.cache/clangd/index/stringfwd.h.46F5354FF43D558B.idx
+new file mode 100644
+index 0000000..2dd57a2
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/stringfwd.h.46F5354FF43D558B.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/struct_FILE.h.381C91ADEB812BD0.idx b/obj/.clangd/.cache/clangd/index/struct_FILE.h.381C91ADEB812BD0.idx
+new file mode 100644
+index 0000000..1c9b88e
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/struct_FILE.h.381C91ADEB812BD0.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/struct___jmp_buf_tag.h.1A1FE82AE2A8C83E.idx b/obj/.clangd/.cache/clangd/index/struct___jmp_buf_tag.h.1A1FE82AE2A8C83E.idx
+new file mode 100644
+index 0000000..cf25796
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/struct___jmp_buf_tag.h.1A1FE82AE2A8C83E.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/struct_itimerspec.h.F65912B0C23B963E.idx b/obj/.clangd/.cache/clangd/index/struct_itimerspec.h.F65912B0C23B963E.idx
+new file mode 100644
+index 0000000..f21b0bd
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/struct_itimerspec.h.F65912B0C23B963E.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/struct_mutex.h.B7FE399CFB3EE72A.idx b/obj/.clangd/.cache/clangd/index/struct_mutex.h.B7FE399CFB3EE72A.idx
+new file mode 100644
+index 0000000..45b6c2a
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/struct_mutex.h.B7FE399CFB3EE72A.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/struct_rwlock.h.DC3BB7AA35AC6E1A.idx b/obj/.clangd/.cache/clangd/index/struct_rwlock.h.DC3BB7AA35AC6E1A.idx
+new file mode 100644
+index 0000000..553226d
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/struct_rwlock.h.DC3BB7AA35AC6E1A.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/struct_sched_param.h.CD7E2C8443A25D88.idx b/obj/.clangd/.cache/clangd/index/struct_sched_param.h.CD7E2C8443A25D88.idx
+new file mode 100644
+index 0000000..1ef1ab9
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/struct_sched_param.h.CD7E2C8443A25D88.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/struct_timespec.h.A8D8E9E445ABACD3.idx b/obj/.clangd/.cache/clangd/index/struct_timespec.h.A8D8E9E445ABACD3.idx
+new file mode 100644
+index 0000000..cc20ce6
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/struct_timespec.h.A8D8E9E445ABACD3.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/struct_timeval.h.AF8389A65B9351D9.idx b/obj/.clangd/.cache/clangd/index/struct_timeval.h.AF8389A65B9351D9.idx
+new file mode 100644
+index 0000000..f71bdb8
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/struct_timeval.h.AF8389A65B9351D9.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/struct_tm.h.DB4B8A2FCA6E502E.idx b/obj/.clangd/.cache/clangd/index/struct_tm.h.DB4B8A2FCA6E502E.idx
+new file mode 100644
+index 0000000..26979b5
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/struct_tm.h.DB4B8A2FCA6E502E.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/stubs-64.h.2847EFCBD0B50F1C.idx b/obj/.clangd/.cache/clangd/index/stubs-64.h.2847EFCBD0B50F1C.idx
+new file mode 100644
+index 0000000..9ab5d98
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/stubs-64.h.2847EFCBD0B50F1C.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/stubs.h.CDC9CE97F970174E.idx b/obj/.clangd/.cache/clangd/index/stubs.h.CDC9CE97F970174E.idx
+new file mode 100644
+index 0000000..bb483db
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/stubs.h.CDC9CE97F970174E.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/system_error.73BA37BC3845EF0C.idx b/obj/.clangd/.cache/clangd/index/system_error.73BA37BC3845EF0C.idx
+new file mode 100644
+index 0000000..fe8271c
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/system_error.73BA37BC3845EF0C.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/thread-shared-types.h.3BD350B33FA93E57.idx b/obj/.clangd/.cache/clangd/index/thread-shared-types.h.3BD350B33FA93E57.idx
+new file mode 100644
+index 0000000..81d95b1
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/thread-shared-types.h.3BD350B33FA93E57.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/time.h.406C037FEAE97D8D.idx b/obj/.clangd/.cache/clangd/index/time.h.406C037FEAE97D8D.idx
+new file mode 100644
+index 0000000..6b7b13e
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/time.h.406C037FEAE97D8D.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/time.h.CAE3AE26EEDD3617.idx b/obj/.clangd/.cache/clangd/index/time.h.CAE3AE26EEDD3617.idx
+new file mode 100644
+index 0000000..efd2b7a
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/time.h.CAE3AE26EEDD3617.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/time64.h.F45FA1DA5DF8C4A3.idx b/obj/.clangd/.cache/clangd/index/time64.h.F45FA1DA5DF8C4A3.idx
+new file mode 100644
+index 0000000..29defd9
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/time64.h.F45FA1DA5DF8C4A3.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/time_t.h.39DFD8EDDDC06944.idx b/obj/.clangd/.cache/clangd/index/time_t.h.39DFD8EDDDC06944.idx
+new file mode 100644
+index 0000000..2d048e0
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/time_t.h.39DFD8EDDDC06944.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/timer_t.h.C19EE5B24E70D289.idx b/obj/.clangd/.cache/clangd/index/timer_t.h.C19EE5B24E70D289.idx
+new file mode 100644
+index 0000000..53d9483
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/timer_t.h.C19EE5B24E70D289.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/timesize.h.4A370235915877E5.idx b/obj/.clangd/.cache/clangd/index/timesize.h.4A370235915877E5.idx
+new file mode 100644
+index 0000000..82cd552
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/timesize.h.4A370235915877E5.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/timex.h.42DA6DDF2F414475.idx b/obj/.clangd/.cache/clangd/index/timex.h.42DA6DDF2F414475.idx
+new file mode 100644
+index 0000000..f486982
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/timex.h.42DA6DDF2F414475.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/type_traits.BF3C0E0846077307.idx b/obj/.clangd/.cache/clangd/index/type_traits.BF3C0E0846077307.idx
+new file mode 100644
+index 0000000..567f777
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/type_traits.BF3C0E0846077307.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/type_traits.h.619F69D1F5E39E89.idx b/obj/.clangd/.cache/clangd/index/type_traits.h.619F69D1F5E39E89.idx
+new file mode 100644
+index 0000000..1cba3a7
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/type_traits.h.619F69D1F5E39E89.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/typeinfo.80DBFAB737BDBDEE.idx b/obj/.clangd/.cache/clangd/index/typeinfo.80DBFAB737BDBDEE.idx
+new file mode 100644
+index 0000000..f361187
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/typeinfo.80DBFAB737BDBDEE.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/types.h.90E44DF27105B9F5.idx b/obj/.clangd/.cache/clangd/index/types.h.90E44DF27105B9F5.idx
+new file mode 100644
+index 0000000..a27da6f
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/types.h.90E44DF27105B9F5.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/types.h.A3617F8DB832C1C0.idx b/obj/.clangd/.cache/clangd/index/types.h.A3617F8DB832C1C0.idx
+new file mode 100644
+index 0000000..cf15086
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/types.h.A3617F8DB832C1C0.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/typesizes.h.55F68CC1D9A79D64.idx b/obj/.clangd/.cache/clangd/index/typesizes.h.55F68CC1D9A79D64.idx
+new file mode 100644
+index 0000000..3cf779f
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/typesizes.h.55F68CC1D9A79D64.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/uintn-identity.h.CC2752B60898E5D5.idx b/obj/.clangd/.cache/clangd/index/uintn-identity.h.CC2752B60898E5D5.idx
+new file mode 100644
+index 0000000..1f0b04f
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/uintn-identity.h.CC2752B60898E5D5.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/utility.h.08267A48FFBD693D.idx b/obj/.clangd/.cache/clangd/index/utility.h.08267A48FFBD693D.idx
+new file mode 100644
+index 0000000..e4f0a49
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/utility.h.08267A48FFBD693D.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/waitflags.h.3D8ABE61751FD5CF.idx b/obj/.clangd/.cache/clangd/index/waitflags.h.3D8ABE61751FD5CF.idx
+new file mode 100644
+index 0000000..84044dc
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/waitflags.h.3D8ABE61751FD5CF.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/waitstatus.h.5F650F03B211ACBF.idx b/obj/.clangd/.cache/clangd/index/waitstatus.h.5F650F03B211ACBF.idx
+new file mode 100644
+index 0000000..c921065
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/waitstatus.h.5F650F03B211ACBF.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/wchar.h.05540B9ED5ECA474.idx b/obj/.clangd/.cache/clangd/index/wchar.h.05540B9ED5ECA474.idx
+new file mode 100644
+index 0000000..beffaeb
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/wchar.h.05540B9ED5ECA474.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/wchar.h.A65FEA87E595D0B5.idx b/obj/.clangd/.cache/clangd/index/wchar.h.A65FEA87E595D0B5.idx
+new file mode 100644
+index 0000000..57974c4
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/wchar.h.A65FEA87E595D0B5.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/wctype-wchar.h.AC7BDF2A302849D2.idx b/obj/.clangd/.cache/clangd/index/wctype-wchar.h.AC7BDF2A302849D2.idx
+new file mode 100644
+index 0000000..17936d2
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/wctype-wchar.h.AC7BDF2A302849D2.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/wctype.h.7B6F632C96F4C730.idx b/obj/.clangd/.cache/clangd/index/wctype.h.7B6F632C96F4C730.idx
+new file mode 100644
+index 0000000..ef0fa10
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/wctype.h.7B6F632C96F4C730.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/wint_t.h.38B0F04FA117F6F8.idx b/obj/.clangd/.cache/clangd/index/wint_t.h.38B0F04FA117F6F8.idx
+new file mode 100644
+index 0000000..4dd6735
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/wint_t.h.38B0F04FA117F6F8.idx differ
+diff --git a/obj/.clangd/.cache/clangd/index/wordsize.h.4786D1A8F36BD2D6.idx b/obj/.clangd/.cache/clangd/index/wordsize.h.4786D1A8F36BD2D6.idx
+new file mode 100644
+index 0000000..57915c3
+Binary files /dev/null and b/obj/.clangd/.cache/clangd/index/wordsize.h.4786D1A8F36BD2D6.idx differ
+diff --git a/obj/.clangd/compile_commands.json b/obj/.clangd/compile_commands.json
+new file mode 100644
+index 0000000..d1c58ee
+--- /dev/null
++++ b/obj/.clangd/compile_commands.json
+@@ -0,0 +1 @@
++[{"directory":"/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/","command":"/usr/bin/g++ -Isrc/prime_check -Isrc src/prime_check/prime_check.cpp","file":"src/prime_check/prime_check.cpp"},{"directory":"/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/","command":"/usr/bin/g++ -Isrc/prime_check -Isrc src/main.cpp","file":"src/main.cpp"}]
+\ No newline at end of file
+diff --git a/obj/libnthprime.deps b/obj/libnthprime.deps
+new file mode 100644
+index 0000000..251c85b
+--- /dev/null
++++ b/obj/libnthprime.deps
+@@ -0,0 +1,4 @@
++/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/obj/main.o
++20230413181623
++/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/obj/prime_check.o
++20230413181230
+diff --git a/obj/main b/obj/main
+new file mode 100755
+index 0000000..19f9bd9
+Binary files /dev/null and b/obj/main differ
+diff --git a/obj/main.cpp.stderr b/obj/main.cpp.stderr
+new file mode 100644
+index 0000000..e69de29
+diff --git a/obj/main.cpp.stdout b/obj/main.cpp.stdout
+new file mode 100644
+index 0000000..e69de29
+diff --git a/obj/nthprime-loc.xml b/obj/nthprime-loc.xml
+new file mode 100644
+index 0000000..847600f
+--- /dev/null
++++ b/obj/nthprime-loc.xml
+@@ -0,0 +1,90 @@
++<?xml version="1.0"?>
++<Locations >
++  <Project>
++    <vfs_file>/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/nthprime.gpr</vfs_file>
++    <file_marker column=" 1" line=" 1" >
++      <vfs_project>/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/nthprime.gpr</vfs_project>
++      <vfs_file>/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/src/main.cpp</vfs_file>
++    </file_marker>
++    <file_marker column=" 1" line=" 17" >
++      <vfs_project>/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/nthprime.gpr</vfs_project>
++      <vfs_file>/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/src/main.cpp</vfs_file>
++    </file_marker>
++    <file_marker column=" 1" line=" 1" >
++      <vfs_project>/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/nthprime.gpr</vfs_project>
++      <vfs_file>/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/src/prime_check/prime_check.cpp</vfs_file>
++    </file_marker>
++    <file_marker column=" 22" line=" 2" >
++      <vfs_project />
++      <vfs_file>/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/src/prime_check/prime_check.h</vfs_file>
++    </file_marker>
++    <file_marker column=" 2" line=" 8" >
++      <vfs_project />
++      <vfs_file>/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/src/prime_check/prime_check.h</vfs_file>
++    </file_marker>
++    <file_marker column=" 11" line=" 4" >
++      <vfs_project />
++      <vfs_file>/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/src/prime_check/prime_check.h</vfs_file>
++    </file_marker>
++    <file_marker column=" 1" line=" 1" >
++      <vfs_project>/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/nthprime.gpr</vfs_project>
++      <vfs_file>/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/src/prime_check/prime_check.cpp</vfs_file>
++    </file_marker>
++    <file_marker column=" 17" line=" 2" >
++      <vfs_project>/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/nthprime.gpr</vfs_project>
++      <vfs_file>/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/src/prime_check/prime_check.cpp</vfs_file>
++    </file_marker>
++    <file_marker column=" 21" line=" 3" >
++      <vfs_project>/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/nthprime.gpr</vfs_project>
++      <vfs_file>/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/src/prime_check/prime_check.cpp</vfs_file>
++    </file_marker>
++    <file_marker column=" 2" line=" 43" >
++      <vfs_project>/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/nthprime.gpr</vfs_project>
++      <vfs_file>/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/src/prime_check/prime_check.cpp</vfs_file>
++    </file_marker>
++    <file_marker column=" 11" line=" 5" >
++      <vfs_project>/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/nthprime.gpr</vfs_project>
++      <vfs_file>/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/src/prime_check/prime_check.cpp</vfs_file>
++    </file_marker>
++    <file_marker column=" 18" line=" 9" >
++      <vfs_project>/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/nthprime.gpr</vfs_project>
++      <vfs_file>/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/src/prime_check/prime_check.cpp</vfs_file>
++    </file_marker>
++    <file_marker column=" 10" line=" 22" >
++      <vfs_project>/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/nthprime.gpr</vfs_project>
++      <vfs_file>/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/src/prime_check/prime_check.cpp</vfs_file>
++    </file_marker>
++    <file_marker column=" 9" line=" 11" >
++      <vfs_project>/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/nthprime.gpr</vfs_project>
++      <vfs_file>/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/src/prime_check/prime_check.cpp</vfs_file>
++    </file_marker>
++    <file_marker column=" 18" line=" 21" >
++      <vfs_project>/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/nthprime.gpr</vfs_project>
++      <vfs_file>/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/src/prime_check/prime_check.cpp</vfs_file>
++    </file_marker>
++    <file_marker column=" 17" line=" 18" >
++      <vfs_project>/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/nthprime.gpr</vfs_project>
++      <vfs_file>/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/src/prime_check/prime_check.cpp</vfs_file>
++    </file_marker>
++    <file_marker column=" 24" line=" 23" >
++      <vfs_project>/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/nthprime.gpr</vfs_project>
++      <vfs_file>/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/src/prime_check/prime_check.cpp</vfs_file>
++    </file_marker>
++    <file_marker column=" 14" line=" 27" >
++      <vfs_project>/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/nthprime.gpr</vfs_project>
++      <vfs_file>/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/src/prime_check/prime_check.cpp</vfs_file>
++    </file_marker>
++    <file_marker column=" 1" line=" 1" >
++      <vfs_project>/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/nthprime.gpr</vfs_project>
++      <vfs_file>/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/src/main.cpp</vfs_file>
++    </file_marker>
++    <file_marker column=" 37" line=" 2" >
++      <vfs_project>/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/nthprime.gpr</vfs_project>
++      <vfs_file>/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/src/main.cpp</vfs_file>
++    </file_marker>
++    <file_marker current="true" column=" 47" line=" 12" >
++      <vfs_project>/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/nthprime.gpr</vfs_project>
++      <vfs_file>/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/src/main.cpp</vfs_file>
++    </file_marker>
++  </Project>
++</Locations>
+diff --git a/obj/prime_check.cpp.stderr b/obj/prime_check.cpp.stderr
+new file mode 100644
+index 0000000..e69de29
+diff --git a/obj/prime_check.cpp.stdout b/obj/prime_check.cpp.stdout
+new file mode 100644
+index 0000000..e69de29
+diff --git a/src/.clang-format b/src/.clang-format
+new file mode 100644
+index 0000000..c10bcba
+--- /dev/null
++++ b/src/.clang-format
+@@ -0,0 +1,6 @@
++BasedOnStyle: GNU
++ColumnLimit: 80
++ContinuationIndentWidth: 4
++IndentWidth: 4
++ReflowComments: true
++UseTab: Never
+diff --git a/src/main.cpp b/src/main.cpp
+new file mode 100644
+index 0000000..71f7695
+--- /dev/null
++++ b/src/main.cpp
+@@ -0,0 +1,16 @@
++#include <iostream>
++#include "prime_check/prime_check.h"
++
++using namespace std;
++
++int main()
++{
++    int n = 12;
++    std::cout<<"Enter N: ";
++    std::cin >> n;
++
++    int nth_prime = prime_check::nth_prime (n);
++
++    std::cout<<"\nNth prime of "<<n<<" is: "<<nth_prime<<std::endl;
++    return 0;
++}
+diff --git a/src/prime_check/prime_check.cpp b/src/prime_check/prime_check.cpp
+new file mode 100644
+index 0000000..86de7ec
+--- /dev/null
++++ b/src/prime_check/prime_check.cpp
+@@ -0,0 +1,43 @@
++#include "prime_check/prime_check.h"
++#include <cmath>
++#include <stdexcept>
++
++namespace prime_check
++{
++
++int
++nth_prime (int n)
++{
++    if (n < 1)
++        throw std::domain_error ("Invalid number detected");
++
++    int base_number = 2;
++    while (n - 1 > 0)
++        {
++            base_number += 1;
++            if (check (base_number))
++                {
++                    n -= 1;
++                }
++        }
++    return base_number;
++}
++
++bool
++check (int n)
++{
++    if (int (std::sqrt (n)) * int (std::sqrt (n)) == n)
++        return false;
++
++    for (int i = 2; i <= std::sqrt (n); i++)
++    {
++        if (i * i > n)
++            break;
++
++        if(n%i==0)
++            return false;
++    }
++    return true;
++}
++
++}
+diff --git a/src/prime_check/prime_check.h b/src/prime_check/prime_check.h
+new file mode 100644
+index 0000000..9877426
+--- /dev/null
++++ b/src/prime_check/prime_check.h
+@@ -0,0 +1,10 @@
++#if !defined(PRIME_CHECK_H)
++#define PRIME_CHECK_H
++
++namespace prime_check
++{
++int nth_prime (int n);
++bool check (int n);
++}
++
++#endif
