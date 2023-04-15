@@ -1,0 +1,7 @@
+/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/QueenAttackExercise/release/CMakeFiles/QueenAttackExercise.dir
+/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/QueenAttackExercise/release/CMakeFiles/edit_cache.dir
+/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/QueenAttackExercise/release/CMakeFiles/rebuild_cache.dir
+/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/QueenAttackExercise/release/CMakeFiles/list_install_components.dir
+/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/QueenAttackExercise/release/CMakeFiles/install.dir
+/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/QueenAttackExercise/release/CMakeFiles/install/local.dir
+/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/QueenAttackExercise/release/CMakeFiles/install/strip.dir
