@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1681633580 source:/home/shumwe/Desktop/ProfessionalProjects/cpp-projects/queenattack/main.cpp
+	"attack.h"
+	<iostream>
+
+1681633489 /home/shumwe/Desktop/ProfessionalProjects/cpp-projects/queenattack/attack.h
+
