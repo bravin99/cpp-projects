@@ -5,7 +5,7 @@ using namespace std;
 
 namespace alergy
 {
-    alergy::Alergy_Test(int n)
+    alergy::Alergy_Test::Alergy_Test(int n)
     {
         alergy_num = n;
     }
