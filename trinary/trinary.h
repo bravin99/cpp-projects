@@ -5,6 +5,6 @@
 
 namespace trinary
 {
-    int to_decimal(std::string_view str);
+    [[nodiscard]] int to_decimal(std::string_view str) noexcept;
 }
 #endif //TRINARY_TRINARY_H
