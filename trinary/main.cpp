@@ -4,7 +4,7 @@
 
 
 int main() {
-    std::string tr = "012";
+    std::string tr = "102012012";
     int decimal_value = trinary::to_decimal(tr);
 
     std::cout << "Trinary string: " << tr << std::endl;
